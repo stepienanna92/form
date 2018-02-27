@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<html>
+
+<head>
+    <title>--Formularz--</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">NEWS</a>
+        </div>
+    </header>
+    <div class="content">
+        <div class="main">
+            <h1>Formularz rejestracyjny</h1>
+            <form action="" method="post" name="signup" id="signup">
+                <div class="label">Płeć:</div>
+                <div class="indent">
+                    <input type="radio" name="gender" id="woman" value="woman" title="Zaznacz jedno z pól.">
+                    <label for="woman">Kobieta</label>
+                    <input type="radio" name="gender" id="man" value="man">
+                    <label for="man">Mężczyzna</label>
+                </div>
+                <div>
+                    <label for="email" class="label">Adres e-mail:</label>
+                    <input name="email" type="text" id="email">
+                </div>
+                <div>
+                    <label for="password" class="label">Hasło:</label>
+                    <input name="password" type="password" id="password">
+                </div>
+                <div>
+                    <label for="confirm_password" class="label">Powtórz hasło:</label>
+                    <input name="confirm_password" type="password" id="confirm-password">
+                </div>
+                <div>
+                    <label for="dob" class="label">Data urodzenia:</label>
+                    <input name="dob" type="text" id="dob" class="date" title="Podaj datę urodzenia w formacie 01/23/2014.">
+                </div>
+                <div>
+                    <label for="info" class="label">Skąd wiesz o naszej stronie?</label>
+                    <select name="info" id="info" class="required" title="Wybierz jedno pole.">
+					<option value="">--Wybierz--</option>
+					<option value="google">Google</option>
+					<option value="znajomi">Znajomi</option>
+					<option value="rodzina">Rodzina</option>
+					<option value="gazeta">Gazeta</option>
+					<option value="telewizja">Telewizja</option>
+					<option value="inne">Inne</option>
+				</select>
+                </div>
+                <div><span class="label-check">Chce otrzymywać powiadomienia:</span>
+                    <input name="notyfication" type="checkbox" id="news" value="news" class="required" title="Zaznacz przynajmniej jedno z pól.">
+                    <label for="news">Wiadomości ze świata</label>
+                    <input name="notyfication" type="checkbox" id="weather" value="weather">
+                    <label for="weather">Pogoda</label>
+                    <input name="notyfication" type="checkbox" id="sport" value="sport">
+                    <label for="sport">Sport</label>
+                    <input name="notyfication" type="checkbox" id="biznes" value="biznes">
+                    <label for="biznes">Biznes</label>
+                    <input name="notyfication" type="checkbox" id="tourism" value="tourism">
+                    <label for="tourism">Turystyka</label>
+                    <input name="notyfication" type="checkbox" id="horoscop" value="horoscop">
+                    <label for="horoscop">Horoskop</label>
+                    <input name="notyfication" type="checkbox" id="automotive" value="automotivet">
+                    <label for="automotive">Motoryzacja</label>
+                </div>
+                <div>
+                    <label for="comments" class="label">Komentarze</label>
+                    <textarea name="comments" cols="25" rows="5" id="comments"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" class="button" name="submit" id="submit" value="Wyślij">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2018 Anna Stępień</p>
+    </footer>
+
+    <script src="js/jquery-1.6.3.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
