@@ -1,16 +1,16 @@
 /* reset */
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     border: 0;
     font-size: 100%;
 }
 
 body {
     line-height: 1;
-    background-color: #A4A4A4;
-    font-family: 'Cormorant', serif;
+    background-color: #434343;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
@@ -21,13 +21,14 @@ body {
 
 .logo a {
     text-decoration: none;
+    font-family: 'Indie Flower', cursive;
     color: #DC0000;
     font-size: 55px;
 }
 
 .logo {
     width: 150px;
-    border-bottom: 1px solid #DC0000;
+    border-bottom: 2px solid #DC0000;
 }
 
 header {
